@@ -1,0 +1,86 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+br {
+	user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: normal;
+	margin: 0;
+}
+
+a {
+	color: #338BFF;
+}
+
+.title {
+	font-family: 'IBM Plex Serif', serif;
+}
+
+.presentation {
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.section {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	transition: .2s ease;
+	box-sizing: border-box;
+	margin: 50px 0;
+}
+
+.button-main {
+	padding: 20px 30px;
+	background: linear-gradient(45deg, #338BFF 0%, #33C0FF 100%);
+	color: white;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	outline: none;
+	transition: .2s ease;
+	user-select: none;
+}
+
+.button-main:hover {
+	box-shadow: 0 0 5px #338BFF;
+}
+
+#instructions {
+	position: relative;
+	right: 8px;
+	width: calc(100% + 16px);
+	background: linear-gradient(45deg, #338BFF 0%, #33C0FF 100%);
+	text-align: center;
+}
+
+#instructions div {
+	border-radius: 2px;
+	box-shadow: 0 0 20px #338BFF;
+	display: inline-block;
+	padding: 20px;
+	background: white;
+	max-width: 500px;
+}
+
+#link {
+	background: rgba(252, 255, 51, .7);
+	color: black;
+	text-decoration: none;
+}
+
+#start {
+	padding: 19vh 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+	.section {
+		width: 100%;
+	}
+}
