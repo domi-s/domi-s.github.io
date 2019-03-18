@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
 	color: #338BFF;
+	text-decoration: underline dotted;
 }
 
 .title {
@@ -75,7 +76,7 @@ a {
 }
 
 #start {
-	padding: 19vh 0;
+	padding: 5vh 0;
 	text-align: center;
 }
 
