@@ -1,0 +1,10 @@
+* { font-family: 'Sarabun', sans-serif; -webkit-tap-highlight-color: transparent; outline: none; }
+
+::selection, .selection { background: #ededed; color: red; }
+
+br { user-select: none; }
+body { max-width: 750px; margin: 0 auto; padding: 15px; }
+table { margin: 0 auto; }
+input { border-radius: 5px; padding: 5px; border: 1px solid #FFDA33; width: 100px; }
+img { width: 100%; border-radius: 10px; }
+textarea { width: 100%; resize: vertical; min-height: 100px; height: 100px; }

